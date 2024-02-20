@@ -33,6 +33,10 @@ Web3Function.onRun(async (context: Web3FunctionContext) => {
 
   const keeperCheckResponse =
     await targetAllocatorContract.callStatic.keeperCheck(checkerBytecode);
+  // const keeperCheckResponse =
+  //   await targetAllocatorContract.callStatic.checkReallocationNeeded(
+  //     checkerBytecode
+  //   );
 
   // console.log(keeperCheckResponse);
   const mustReallocate = keeperCheckResponse[0];

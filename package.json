@@ -5,7 +5,7 @@
   "repository": "https://github.com/gelatodigital/web3-functions-hardhat-template",
   "private": false,
   "scripts": {
-    "run:target-allocator": "npx hardhat w3f-run target-allocator --logs --network ethereum",
+    "start:target-allocator": "npx hardhat w3f-run target-allocator --logs --network ethereum",
     "build": "yarn clean && yarn install && yarn compile && npx tsc",
     "compile": "npx hardhat compile --force",
     "clean": "rm -rf dist",
